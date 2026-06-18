@@ -1,0 +1,8 @@
+torch>=2.0.0
+torchvision
+flask
+flask-cors
+requests
+python-dotenv
+psutil
+mysql-connector-pyth
