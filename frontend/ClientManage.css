@@ -1,0 +1,107 @@
+/* =========================================
+   ADMIN NAVIGATION TABS
+   ========================================= */
+.admin-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tab-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+.tab-btn.active {
+  background-color: #2c3e50; /* Dark blue for active */
+}
+
+.tab-btn.inactive {
+  background-color: #95a5a6; /* Muted gray for inactive */
+}
+
+/* =========================================
+   CLIENT MANAGEMENT PANEL
+   ========================================= */
+.client-management-card {
+  border-top: 5px solid #3498db;
+}
+
+/* Action Buttons inside the Table */
+.action-btn {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity 0.2s;
+}
+
+.action-btn:hover {
+  opacity: 0.85;
+}
+
+.btn-authorize {
+  background-color: #27ae60; /* Green */
+}
+
+.btn-revoke {
+  background-color: #f39c12; /* Orange */
+}
+
+.btn-delete {
+  background-color: #e74c3c; /* Red */
+  margin-right: 0; /* Remove right margin from the last button */
+}
+
+/* =========================================
+   DYNAMIC STATUS BADGES
+   ========================================= */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.status-badge.APPROVED {
+  background-color: #e8f8f5;
+  color: #27ae60;
+  border: 1px solid #27ae60;
+}
+
+.status-badge.REJECTED {
+  background-color: #fdedec;
+  color: #c0392b;
+  border: 1px solid #c0392b;
+}
+
+.status-badge.PENDING {
+  background-color: #fef9e7;
+  color: #f39c12;
+  border: 1px solid #f39c12;
+}
+
+.status-badge.UNAUTHORIZED, .status-badge.UNVERIFIED {
+  background-color: #ebedef;
+  color: #7f8c8d;
+  border: 1px solid #7f8c8d;
+}
